@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="portada">
+        <h1>El mundo de los Perros</h1>
+        <h3>Todo lo que necesitas saber sobre los perros</h3>
+        <img src="./img/golden-retriever.webp" alt="golden-retriever" />
+      </div>
+      <div class="information">
+        <h1>Bienvenidos al mundo canino</h1>
+        <hr />
+        <p>
+          Los perros son animales de compañía leales y afectuosos que han estado
+          junto a los seres humanos durante miles de años. Son conocidos por su
+          inteligencia, capacidad de aprendizaje y por formar fuertes vínculos
+          emocionales con sus dueños. Existen muchas razas, cada una con
+          características físicas y temperamentales únicas, lo que los convierte
+          en compañeros ideales para distintos estilos de vida. Los perros no
+          solo ofrecen amor incondicional, sino que también desempeñan
+          importantes roles en la sociedad, como guías para personas con
+          discapacidad visual, perros de terapia o incluso perros de trabajo en
+          tareas de rescate y seguridad. Sin duda, su presencia en nuestras
+          vidas aporta alegría y bienestar.
+        </p>
+        <h3>Datos Curiosos</h3>
+        <ul>
+          <li>
+            Olfato increíble: Tienen un olfato de 10,000 a 100,000 veces más
+            agudo que los humanos.
+          </li>
+          <li>
+            Lenguaje de cola: El movimiento de la cola refleja su estado de
+            ánimo.
+          </li>
+          <li>Sueñan: Mueven las patitas cuando sueñan, como nosotros.</li>
+          <li>
+            Nariz húmeda: Les ayuda a captar olores y regular la temperatura.
+          </li>
+          <li>
+            Huellas digitales: Su nariz tiene un patrón único, igual que
+            nuestras huellas.
+          </li>
+        </ul>
+      </div>
+      <div class="galeria">
+        <div>
+          <h3>Golden Retriever</h3>
+          <img
+            src="./img/BREED Hero_0059_golden_retriever.jpg"
+            alt="golden-retriever"
+          />
+          <p>
+            Amigable, leal e inteligente. Es ideal para familias y como perro de
+            terapia. Su pelaje dorado y su disposición a aprender lo hacen fácil
+            de entrenar y muy sociable.
+          </p>
+        </div>
+        <div>
+          <h3>Border Collie</h3>
+          <img
+            src="./img/BREED Hero_0018_border_collie.jpg"
+            alt="Border Collie"
+          />
+          <p>
+            Extremadamente inteligente y enérgico. Necesita mucho ejercicio y
+            estimulación mental. Perfecto para trabajos como el pastoreo, es
+            leal y muy ágil.
+          </p>
+        </div>
+        <div>
+          <h3>Pastor Aleman</h3>
+          <img
+            src="./img/sitesdefaultfilesstylessquare_medium_440x440public2022-07German-Shepherd-Dog.jpg"
+            alt="Pastor Aleman"
+          />
+        </div>
+        <p>
+          Leal, inteligente y protector. Excelente para trabajo de seguridad y
+          servicio. Requiere ejercicio y entrenamiento, y es muy fiel a su
+          familia
+        </p>
+      </div>
+      <div class="form-container">
+        <h2>Registro de Perro</h2>
+        <form action="#" method="POST">
+          <label for="nombre">Nombre del perro:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="raza">Raza:</label>
+          <input type="text" id="raza" name="raza" required />
+
+          <label for="edad">Edad (en años):</label>
+          <input type="number" id="edad" name="edad" min="0" required />
+
+          <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+          <input
+            type="date"
+            id="fechaNacimiento"
+            name="fechaNacimiento"
+            required
+          />
+
+          <label for="sexo">Sexo:</label>
+          <select id="sexo" name="sexo" required>
+            <option value="macho">Macho</option>
+            <option value="hembra">Hembra</option>
+          </select>
+
+          <label for="color">Color del pelaje:</label>
+          <input type="text" id="color" name="color" required />
+
+          <button type="submit">Registrar Perro</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
