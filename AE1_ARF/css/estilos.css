@@ -1,0 +1,41 @@
+.nav-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-collapse {
+  display: none;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav-toggle:checked ~ .nav-collapse {
+  display: block;
+}
+
+.nav-collapse .navbar-nav .nav-link {
+  padding: 0.5rem 0;
+}
+
+@media (min-width: 992px) {
+  .navbar-toggler,
+  .nav-toggle {
+    display: none !important;
+  }
+
+  .nav-collapse {
+    display: flex !important;
+    width: auto;
+    padding: 0;
+  }
+
+  .nav-collapse .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-collapse .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}

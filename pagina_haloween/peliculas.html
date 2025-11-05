@@ -9,7 +9,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <!-- Panel de Accesibilidad -->
+    <div class="accessibility-panel" id="accessibilityPanel" role="region" aria-label="Herramientas de accesibilidad">
+      <button class="accessibility-toggle" id="accessibilityToggle" aria-label="Abrir panel de accesibilidad" aria-expanded="false">♿</button>
+      <div class="accessibility-content" id="accessibilityContent">
+        <h3 class="h6 mb-3">Herramientas de Accesibilidad</h3>
+        <div class="d-grid gap-2">
+          <button class="btn btn-sm btn-outline-light" id="increaseFont" aria-label="Aumentar tamaño de texto">🔍+ Aumentar Texto</button>
+          <button class="btn btn-sm btn-outline-light" id="decreaseFont" aria-label="Disminuir tamaño de texto">🔍- Reducir Texto</button>
+          <button class="btn btn-sm btn-outline-light" id="toggleContrast" aria-label="Activar alto contraste">⚫⚪ Alto Contraste</button>
+          <button class="btn btn-sm btn-outline-light" id="toggleReadable" aria-label="Activar fuente legible">📖 Fuente Legible</button>
+          <button class="btn btn-sm btn-outline-light" id="resetAccessibility" aria-label="Restablecer opciones">🔄 Restablecer</button>
+        </div>
+      </div>
+    </div>
 
     <header role="banner" class="py-4 text-center">
       <h1 class="display-4 fw-bold text-warning">🎃 Halloween Games</h1>
@@ -38,7 +51,11 @@
       <section class="row g-4" aria-label="Lista de videojuegos disponibles">
         <article class="col-lg-4 col-md-6">
           <div class="card h-100">
-            <img src="" alt="Resident Evil" class="card-img-top" />
+            <img
+              src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2013/10/258291-clasicos-terror-analisis-resident-evil.jpg?tf=3840x"
+              alt="Resident Evil"
+              class="card-img-top"
+            />
             <div class="card-body">
               <h3 class="card-title h5 text-warning">Resident Evil (1996)</h3>
               <p class="mb-2"><strong>Género:</strong> Survival Horror, Acción</p>
@@ -51,7 +68,7 @@
 
         <article class="col-lg-4 col-md-6">
           <div class="card h-100">
-            <img src="" alt="Silent Hill" class="card-img-top" />
+            <img src="https://i0.wp.com/www.gamerfocus.co/wp-content/uploads/2024/10/silent_hill_ps1.jpg?resize=860%2C484&ssl=1" alt="Silent Hill" class="card-img-top" />
             <div class="card-body">
               <h3 class="card-title h5 text-warning">Silent Hill (1999)</h3>
               <p class="mb-2"><strong>Género:</strong> Horror Psicológico</p>
@@ -64,7 +81,7 @@
 
         <article class="col-lg-4 col-md-6">
           <div class="card h-100">
-            <img src="" alt="Dead Space" class="card-img-top" />
+            <img src="https://gaming-cdn.com/images/products/338/orig/dead-space-2008-pc-juego-ea-app-cover.jpg?v=1705415218" alt="Dead Space" class="card-img-top" />
             <div class="card-body">
               <h3 class="card-title h5 text-warning">Dead Space (2008)</h3>
               <p class="mb-2"><strong>Género:</strong> Survival Horror, Ciencia Ficción</p>
@@ -77,7 +94,11 @@
 
         <article class="col-lg-4 col-md-6">
           <div class="card h-100">
-            <img src="" alt="Outlast" class="card-img-top" />
+            <img
+              src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_OutlastBundleOfTerror_image1600w.jpg"
+              alt="Outlast"
+              class="card-img-top"
+            />
             <div class="card-body">
               <h3 class="card-title h5 text-warning">Outlast (2013)</h3>
               <p class="mb-2"><strong>Género:</strong> Horror, Sigilo</p>
@@ -90,7 +111,11 @@
 
         <article class="col-lg-4 col-md-6">
           <div class="card h-100">
-            <img src="" alt="Amnesia: The Dark Descent" class="card-img-top" />
+            <img
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/57300/5bb76cd89b4752588013eef3c5ae6940e282067c/capsule_616x353.jpg?t=1751032707"
+              alt="Amnesia: The Dark Descent"
+              class="card-img-top"
+            />
             <div class="card-body">
               <h3 class="card-title h5 text-warning">Amnesia: The Dark Descent (2010)</h3>
               <p class="mb-2"><strong>Género:</strong> Horror, Aventura</p>
@@ -103,7 +128,11 @@
 
         <article class="col-lg-4 col-md-6">
           <div class="card h-100">
-            <img src="" alt="Little Nightmares" class="card-img-top" />
+            <img
+              src="https://p325k7wa.twic.pics/high/little-nightmares/little-nightmares/07-retailers/LN_KeyArt.png?twic=v1/resize=760/step=10/quality=80"
+              alt="Little Nightmares"
+              class="card-img-top"
+            />
             <div class="card-body">
               <h3 class="card-title h5 text-warning">Little Nightmares (2017)</h3>
               <p class="mb-2"><strong>Género:</strong> Horror, Plataformas</p>
@@ -117,10 +146,11 @@
     </main>
 
     <footer role="contentinfo" class="text-center py-4 mt-5">
-      <p class="mb-2">&copy; 2025 Halloween Games. Proyecto educativo de accesibilidad web.</p>
+      <p class="mb-2">&copy; 2025 Halloween Games. Proyecto educativo de accesibilidad web. || Adrian Rodriguez Fernandez</p>
       <p class="mb-0 text-light">Diseñado con accesibilidad en mente para todos los usuarios.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="accessibility.js"></script>
   </body>
 </html>
