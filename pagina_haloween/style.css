@@ -1,0 +1,129 @@
+/* Variables */
+:root {
+    --orange: #ff6b00;
+    --dark: #1a0f0f;
+}
+
+/* Base */
+body {
+    background: var(--dark);
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Accesibilidad */
+.skip-link {
+    position: absolute;
+    top: -50px;
+    background: var(--orange);
+    color: #fff;
+    padding: 1rem;
+    z-index: 9999;
+}
+.skip-link:focus { 
+    top: 0; 
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #2d1b1b, #8b4000);
+    border-bottom: 3px solid var(--orange);
+}
+
+/* Navegación */
+.navbar {
+    background-color: #2d1b1b !important;
+    border-bottom: 2px solid var(--orange);
+}
+.nav-link {
+    color: #fff !important;
+    background-color: #8b4000;
+    border-radius: 8px;
+    margin: 0 0.25rem;
+    padding: 0.5rem 1rem !important;
+}
+.nav-link:hover,
+.nav-link.active {
+    background-color: var(--orange);
+}
+
+/* Cards */
+.card {
+    background: #2d1b1b;
+    border: 2px solid #8b4000;
+    color: #fff;
+}
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--orange);
+    box-shadow: 0 8px 20px rgba(255, 107, 0, 0.4);
+}
+.card-body {
+    color: #fff;
+}
+.card-text {
+    color: #e0e0e0;
+}
+.card-img-top {
+    background: linear-gradient(135deg, #8b4000, var(--orange));
+    padding: 2rem;
+    font-size: 5rem;
+    text-align: center;
+}
+
+/* Botones */
+.btn-primary {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #ffa500;
+    border-color: #ffa500;
+    color: #fff;
+}
+.btn-outline-warning {
+    color: #ffa500;
+    border-color: #ffa500;
+}
+.btn-outline-warning:hover {
+    background: #ffa500;
+    color: #000;
+}
+
+/* Formularios */
+.form-control,
+.form-select {
+    background: var(--dark);
+    border: 2px solid #8b4000;
+    color: #fff;
+}
+.form-control:focus,
+.form-select:focus {
+    background: var(--dark);
+    border-color: var(--orange);
+    color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25);
+}
+.form-control::placeholder {
+    color: #999;
+}
+.form-label { 
+    color: var(--orange);
+    font-weight: bold;
+}
+.form-check-label {
+    color: #e0e0e0;
+}
+
+/* Alerts */
+.alert {
+    color: #e0e0e0;
+}
+
+/* Footer */
+footer {
+    background: #2d1b1b;
+    border-top: 3px solid var(--orange);
+    color: #e0e0e0;
+}
